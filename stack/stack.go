@@ -26,7 +26,6 @@ func (s *Stack[T]) Pop() (T, error) {
 		var zero T
 		return zero, errors.New("already empty") // Стек пуст
 	}
-	// Удаляем последний элемент
 	lastIndex := len(s.items) - 1
 	item := s.items[lastIndex]
 	s.items = s.items[:lastIndex]
