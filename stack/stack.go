@@ -10,12 +10,12 @@ type Stack[T any] struct {
 	items []T
 }
 
-// Push adds an item to the top of the stack.
+
 func NewStack[T any]() *Stack[T] {
 	return &Stack[T]{}
 }
 
-// Push - добавляет элемент в стек
+// Push adds an item to the top of the stack.
 func (s *Stack[T]) Push(item T) {
 	s.items = append(s.items, item)
 }
